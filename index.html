@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4f14f9709b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio src="" id="audio-source"></audio>
+    <!--home section-->
+    <section class="home-section">
+      <!--carousel-->
+      <div class="carousel">
+        <img class="active" src="./assets/images/friends.jpeg" alt="" /><img
+          src="./assets/images/matenro.jpeg"
+          alt=""
+        /><img src="./assets/images/uzu.jpeg" alt="" /><img
+          src="./assets/images/starlight.jpeg"
+          alt=""
+        /><img src="./assets/images/ienai.jpeg" alt="" />
+      </div>
+      <!--playlists-->
+      <h1 class="heading">recently played</h1>
+      <div class="playlists-group">
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/24-25.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">top internation</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/starlight.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">top internation</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/sparkle.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">BTS collection</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/uzu.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">bollywood hits</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/ienai.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">justin bieber</p>
+        </div>
+      </div>
+      <h1 class="heading">based on your listening</h1>
+      <div class="playlists-group">
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/friends.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">top internation</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/matenro.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">top internation</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/sparkle.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">BTS collection</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/uzu.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">bollywood hits</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            class="playlist-card-img"
+            src="./assets/images/ienai.jpeg"
+            alt=""
+          />
+          <p class="playlist-card-name">justin bieber</p>
+        </div>
+      </div>
+    </section>
+    <section class="music-player-section">
+      <img class="back-btn icon hide" src="./assets/images/back.png" alt="" />
+      <img class="nav-btn icon hide" src="./assets/images/nav.png" alt="" />
+      <h1 class="current-song-name">24-25</h1>
+      <p class="artist-name hide">iri</p>
+      <img class="cover hide" src="./assets/images/24-25.jpeg" alt="" />
+      <div class="seek-bar-container">
+        <input type="range" class="music-seek-bar" value="0" />
+        <p class="current-time hide">00 : 00</p>
+        <p class="duration hide">00 : 00</p>
+      </div>
+      <div class="controls">
+        <span class="fas fa-redo"></span>
+        <div class="main">
+          <i class="fas fa-backward active"></i>
+          <i class="fas fa-play active"></i>
+          <i class="fas fa-pause"></i>
+          <i class="fas fa-forward active"></i>
+        </div>
+        <input
+          type="range"
+          class="volume-slider"
+          max="1"
+          value="1"
+          step="0.1"
+        />
+        <span class="fas fa-volume-up"></span>
+      </div>
+    </section>
+    <section class="playlist">
+      <img src="./assets/images/back.png" alt="" class="back-btn icon" />
+      <h1 class="title">playlist</h1>
+      <div class="queue active">
+        <div class="queue-cover">
+          <img src="./assets/images/friends.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">friends</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/24-25.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">24-25</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/ienai.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">言えない</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/matenro.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">摩天楼</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/sparkle.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">Sparkle</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/starlight.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">STARLIGHTS</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/uzu.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">渦</p>
+      </div>
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="./assets/images/nightgroove.jpeg" alt="" />
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">ナイトグルーヴ</p>
+      </div>
+    </section>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
