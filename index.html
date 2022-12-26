@@ -4,127 +4,127 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
     <script
       src="https://kit.fontawesome.com/4f14f9709b.js"
       crossorigin="anonymous"
     ></script>
-    <title>Music Player</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <audio src="" id="audio-source"></audio>
+    <audio src="" id="audio-src"></audio>
     <!--home section-->
-    <section class="home-section">
-      <!--carousel-->
-      <div class="carousel">
-        <img class="active" src="./assets/images/friends.jpeg" alt="" /><img
-          src="./assets/images/matenro.jpeg"
+    <section class="home">
+      <!--slider-->
+      <div class="slider">
+        <img class="active" src="./assets/images/music1.jpg" alt="" /><img
+          src="./assets/images/music2.jpg"
           alt=""
-        /><img src="./assets/images/uzu.jpeg" alt="" /><img
-          src="./assets/images/starlight.jpeg"
+        /><img src="./assets/images/music3.jpg" alt="" /><img
+          src="./assets/images/music4.jpg"
           alt=""
-        /><img src="./assets/images/ienai.jpeg" alt="" />
+        /><img src="./assets/images/music5.jpg" alt="" />
       </div>
       <!--playlists-->
-      <h1 class="heading">recently played</h1>
-      <div class="playlists-group">
-        <div class="playlist-card">
+      <h1 class="head-title">最近聴いた曲</h1>
+      <div class="recent-group">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/24-25.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music1.jpg"
             alt=""
           />
-          <p class="playlist-card-name">top internation</p>
+          <p class="recent-track-name">music1</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/starlight.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music2.jpg"
             alt=""
           />
-          <p class="playlist-card-name">top internation</p>
+          <p class="recent-track-name">music2</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/sparkle.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music3.jpg"
             alt=""
           />
-          <p class="playlist-card-name">BTS collection</p>
+          <p class="recent-track-name">music3</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/uzu.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music4.jpg"
             alt=""
           />
-          <p class="playlist-card-name">bollywood hits</p>
+          <p class="recent-track-name">music4</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/ienai.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music5.jpg"
             alt=""
           />
-          <p class="playlist-card-name">justin bieber</p>
+          <p class="recent-track-name">music5</p>
         </div>
       </div>
-      <h1 class="heading">based on your listening</h1>
-      <div class="playlists-group">
-        <div class="playlist-card">
+      <h1 class="head-title">おすすめの曲</h1>
+      <div class="recent-group">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/friends.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music1.jpg"
             alt=""
           />
-          <p class="playlist-card-name">top internation</p>
+          <p class="recent-track-name">music1</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/matenro.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music2.jpg"
             alt=""
           />
-          <p class="playlist-card-name">top internation</p>
+          <p class="recent-track-name">music2</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/sparkle.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music3.jpg"
             alt=""
           />
-          <p class="playlist-card-name">BTS collection</p>
+          <p class="recent-track-name">music3</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/uzu.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music4.jpg"
             alt=""
           />
-          <p class="playlist-card-name">bollywood hits</p>
+          <p class="recent-track-name">music4</p>
         </div>
-        <div class="playlist-card">
+        <div class="recent-track">
           <img
-            class="playlist-card-img"
-            src="./assets/images/ienai.jpeg"
+            class="recent-track-img"
+            src="./assets/images/music5.jpg"
             alt=""
           />
-          <p class="playlist-card-name">justin bieber</p>
+          <p class="recent-track-name">music5</p>
         </div>
       </div>
     </section>
-    <section class="music-player-section">
-      <img class="back-btn icon hide" src="./assets/images/back.png" alt="" />
-      <img class="nav-btn icon hide" src="./assets/images/nav.png" alt="" />
-      <h1 class="current-song-name">24-25</h1>
-      <p class="artist-name hide">iri</p>
-      <img class="cover hide" src="./assets/images/24-25.jpeg" alt="" />
-      <div class="seek-bar-container">
-        <input type="range" class="music-seek-bar" value="0" />
+    <section class="player">
+      <img class="arrow-btn icon hide" src="./assets/images/arrow.png" alt="" />
+      <img class="menu-btn icon hide" src="./assets/images/menu.png" alt="" />
+      <h1 class="current-track-name">music1</h1>
+      <p class="current-track-artist hide">artist1</p>
+      <img class="cover hide" src="./assets/images/music1.jpg" alt="" />
+      <div class="sound-bar">
+        <input type="range" class="sound-bar-range" value="0" />
         <p class="current-time hide">00 : 00</p>
         <p class="duration hide">00 : 00</p>
       </div>
-      <div class="controls">
+      <div class="control-panel">
         <span class="fas fa-redo"></span>
         <div class="main">
           <i class="fas fa-backward active"></i>
@@ -132,74 +132,47 @@
           <i class="fas fa-pause"></i>
           <i class="fas fa-forward active"></i>
         </div>
-        <input
-          type="range"
-          class="volume-slider"
-          max="1"
-          value="1"
-          step="0.1"
-        />
+        <input type="range" class="volume-range" max="1" value="1" step="0.1" />
         <span class="fas fa-volume-up"></span>
       </div>
     </section>
-    <section class="playlist">
-      <img src="./assets/images/back.png" alt="" class="back-btn icon" />
-      <h1 class="title">playlist</h1>
-      <div class="queue active">
-        <div class="queue-cover">
-          <img src="./assets/images/friends.jpeg" alt="" />
+    <section class="track-list">
+      <img src="./assets/images/arrow.png" alt="" class="arrow-btn icon" />
+      <h1 class="title">プレイリスト</h1>
+      <div class="track active">
+        <div class="track-cover">
+          <img src="./assets/images/music1.jpg" alt="" />
           <i class="fas fa-pause"></i>
         </div>
-        <p class="name">friends</p>
+        <p class="name">music1</p>
       </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/24-25.jpeg" alt="" />
+      <div class="track">
+        <div class="track-cover">
+          <img src="./assets/images/music2.jpg" alt="" />
           <i class="fas fa-pause"></i>
         </div>
-        <p class="name">24-25</p>
+        <p class="name">music2</p>
       </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/ienai.jpeg" alt="" />
+      <div class="track">
+        <div class="track-cover">
+          <img src="./assets/images/music3.jpg" alt="" />
           <i class="fas fa-pause"></i>
         </div>
-        <p class="name">言えない</p>
+        <p class="name">music3</p>
       </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/matenro.jpeg" alt="" />
+      <div class="track">
+        <div class="track-cover">
+          <img src="./assets/images/music4.jpg" alt="" />
           <i class="fas fa-pause"></i>
         </div>
-        <p class="name">摩天楼</p>
+        <p class="name">music4</p>
       </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/sparkle.jpeg" alt="" />
+      <div class="track">
+        <div class="track-cover">
+          <img src="./assets/images/music5.jpg" alt="" />
           <i class="fas fa-pause"></i>
         </div>
-        <p class="name">Sparkle</p>
-      </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/starlight.jpeg" alt="" />
-          <i class="fas fa-pause"></i>
-        </div>
-        <p class="name">STARLIGHTS</p>
-      </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/uzu.jpeg" alt="" />
-          <i class="fas fa-pause"></i>
-        </div>
-        <p class="name">渦</p>
-      </div>
-      <div class="queue">
-        <div class="queue-cover">
-          <img src="./assets/images/nightgroove.jpeg" alt="" />
-          <i class="fas fa-pause"></i>
-        </div>
-        <p class="name">ナイトグルーヴ</p>
+        <p class="name">music5</p>
       </div>
     </section>
 
